@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <!-- Start navbar -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand text-center" href="#">
+                <h5 data-toggle="modal" data-target="#exampleModal" >Elyasmeen <span>Hotel</span></h5> 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">احجز الآن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item btn-project">
+                        <a href="book.html">إحجز الآن  <span class="mr-2"><i class="fa fa-bookmark"></i></span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- Start Slider -->
+    <div class="slider slider-2">
+        <div class="content text-center">
+            <h5>مرحبا بك فى فندق الياسمين</h5>
+            <h3>قم بالحجز الآن </h3>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- End Slider -->
+
+    <div class="booking-section mt-5 pt-5" id="book">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="book-title mb-4 pb-2">
+                        <h4>قم بالحجز الآن</h4>
+                    </div>
+                    <form action="" class="form-gtoup">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" id="name" class="form-control"  placeholder="الإسم بالكامل">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="phone" id="phone" class="form-control"  placeholder="رقم التليفون">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="national" id="national" class="form-control"  id="national" placeholder="الرقم القومي">
+                            </div>
+                            <div class="col-md-6">
+                                <select name="room" id="room" class="form-control">
+                                    <option value="invidual"> حجز الغرفة الزوجية </option>
+                                    <option value="double">0</option>
+                                    <option value="double">1</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" name="number" id="room-number" class="form-control"  id="room-number" placeholder=" عدد الغرف الفردية">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" name="submit" id="submit" class="btn-project btn-border mt-4 submit-btn pr-5 pl-5" value="احجز الآن">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Start Overview -->
+    <div class="overview">
+        <div class="container">
+            <div class="overview-content text-center">
+                <h2>خدماتنا لعملائنا الكرام</h2>
+                <p>
+                    يقدم فندقنا المتميز العديد من الخدمات لعملائنا المميزين ففندقنا يتميز بخدمة الحراسة على مدار 24 ساعه مما يجعلك تشعر بالطمأنينة دائما ونتميز ايضا بخدمة الواى لعملائنا حتى يمكنهم الاتصال بالعالم الخارجى بكل طمأنية 
+                </p>
+                <h4>هيا احجز اليوم</h4>   
+                <button>إحجز الآن</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Overview -->
+
+
+
+
+     <!-- Start Footer -->
+     <div class="footer" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-lg-9">
+              <div class="site-info">
+                <h4><span>فندق </span><span>الياسمين</span></h4>
+                <p>                                  
+                    فندق الياسمين إحدى أفضل العلامات التجارية الشهيرة في السعودية
+                    ، فندقنا فندق عصرى مفعم بالانتعاش والحيوية والطاقة. يحظى فندق الياسمين بمنزلةٍ
+                     رفيعة وتقديرٍ بالغ يرجع إلى تصاميمه الذكية، وبراعته
+                     المميزة، ونهجه الفَطِن في الاستدامة، الأمر الذي يمنح
+                     للنزلاء راحة البال وفرصة استكشاف العالم، واكتشاف
+                     مكافآت الحياة الصادقة واغتنام الفرصة لـ"عيشِها برفاهية". 
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-3">
+              <div class="contact-us">
+                <h2>تواصل معنا </h2>
+                <ul class="list-unstyled">
+                  <li>السعودية - الرياض - ش الملك فهد</li>
+                  <li>رقم التليفون :- <span>2201202122222</span></li>
+                  <li>الإيميل :-  <a href="mailto:info@elitecorp.com?subject=Contact">info@elitecorp.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer -->
+      <!-- Start Copyright -->
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 text-center text-sm-left text-uppercase">
+              Copyright 2017 Double_Click &copy;
+            </div>
+            <div class="col-sm-6 text-center text-sm-right">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Copyeight-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>    
+    <script src="static/js/script.js"></script>
+</body>
+</html>
