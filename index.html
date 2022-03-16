@@ -7,12 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
     <!-- Start navbar -->
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md" data-aos="fade-down">
         <div class="container-fluid">
             <a class="navbar-brand text-center" href="#">
                 <h5 data-toggle="modal" data-target="#exampleModal" >Elyasmeen <span>Hotel</span></h5> 
@@ -54,7 +59,7 @@
 
     <!-- Start Slider -->
     <div class="slider">
-        <div class="content text-center">
+        <div class="content text-center" data-aos="fade-down">
             <h5>مرحبا بك فى فندق الياسمين</h5>
             <h2>أروع مكان للإسترخاء</h2>
             <h5>فى السعودية</h5>
@@ -64,14 +69,14 @@
     <!-- End Slider -->
 
     <!-- Start About Section -->
-    <div class="about" id="about">
+    <div class="about" id="about" data-aos="fade-down">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
                     <div class="content d-flex align-items-center">
                         <div>
-                            <p class="about-title">ماذا عن فندقنا ؟</p>
-                            <h5>اجعل العميل بطل قصتك</h5>
+                            <p class="about-title title">ماذا عن فندقنا ؟</p>
+                            <h5 class="title">اجعل العميل بطل قصتك</h5>
                             <p class="pt-2 text-muted">
                                  فندق الياسمين إحدى أفضل العلامات التجارية الشهيرة في السعودية
                                 ، فندقنا فندق عصرى مفعم بالانتعاش والحيوية والطاقة. يحظى فندق الياسمين بمنزلةٍ
@@ -80,12 +85,12 @@
                                  للنزلاء راحة البال وفرصة استكشاف العالم، واكتشاف
                                  مكافآت الحياة الصادقة واغتنام الفرصة لـ"عيشِها برفاهية". 
                             </p>
-                            <a href="book.html" class="btn-project btn-border mt-2">إحجز الآن</a>
+                            <a href="book.html" class="btn-project btn-border btn-hover mt-2 scale">إحجز الآن</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="static/images/aboutUs.png" alt="" class="img-responsive w-100">
+                <div class="col-md-6" style="overflow: hidden;">
+                    <img src="static/images/aboutUs.png" alt="" class="img-responsive w-100 img-scale">
                 </div>
             </div>
         </div>
@@ -96,31 +101,31 @@
     <div class="deals section-space" id="services">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-down">
                     <div class="deals-card text-center">
                         <span><i class="fa fa-heart fa-2x rounded-circle"></i></span>
-                        <h3> خدمة الحراسة</h3>
+                        <h3 class="title"> خدمة الحراسة</h3>
                         <p>يتميز فندقنا بحراسة مكثة على مدار 24 ساعة مما يجعلك تنام بأمان دون قلق </p>    
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="deals-card text-center">
+                    <div class="deals-card text-center" data-aos="fade-down">
                         <span><i class="fa fa-cogs fa-2x rounded-circle"></i></span>
-                        <h3>WIFI</h3>
+                        <h3 class="title">WIFI</h3>
                         <p>يتوفر لدينا خدمة واى فاى فى كافة أرجاء الفندق مما يجعلك تتصل بالعالم الخارجى بكل طمأنينة</p>    
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="deals-card text-center">
+                    <div class="deals-card text-center" data-aos="fade-down">
                         <span><i class="fa fa-cloud fa-2x rounded-circle"></i></span>
-                        <h3>الاستقبال</h3>
+                        <h3 class="title">الاستقبال</h3>
                         <p>خدمة الاستقبال والسكرتارية على مدار الساعة.</p>    
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="deals-card text-center">
+                    <div class="deals-card text-center" data-aos="fade-down">
                         <span><i class="fa fa-bookmark fa-2x rounded-circle"></i></span>
-                        <h3>تدبير الغرف </h3>
+                        <h3 class="title">تدبير الغرف </h3>
                         <p>يوجد لدينا خدمة تدبير الغرف صباحاً ومساءً. </p> 
                     </div>
                 </div>
@@ -131,10 +136,10 @@
     <!-- End services -->
 
     <!-- Start Overview -->
-    <div class="overview">
+    <div class="overview" data-aos="fade-down">
         <div class="container">
             <div class="overview-content text-center">
-                <h2>خدماتنا لعملائنا الكرام</h2>
+                <h2 class="title">خدماتنا لعملائنا الكرام</h2>
                 <p>
                     يقدم فندقنا المتميز العديد من الخدمات لعملائنا المميزين ففندقنا يتميز بخدمة الحراسة على مدار 24 ساعه مما يجعلك تشعر بالطمأنينة دائما ونتميز ايضا بخدمة الواى لعملائنا حتى يمكنهم الاتصال بالعالم الخارجى بكل طمأنية 
                 </p>
@@ -146,53 +151,85 @@
     <!-- End Overview -->
 
     <!-- Start hotel photo -->
-    <div class="featured-work" id="hotel">
-        <div class="container">
-            <div class="upper-content text-center">
-                <h2>ها هو فندقنا </h2>
-                <p>القى نظرة على فندقنا وتعرف على شكل فندقنا من الداخل والخارج وكيف تبدو الغرف </p>  
+    <!--- Start Work Section --->
+    <section class="work">
+        <div class="content-box">
+            <div class="content-box--title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"><!-- content-box--title style exists in content-box section in style.css -->
+                <h3 class="title">القي نظرة على فندقنا</h3>
+                <div class="content-title--underline"></div> <!-- content-title--underline style exists in content-box section in style.css -->
             </div>
-        </div>
-        <div class="down-content mt-5">
-            <div class="images">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <img class="websit" src="static/images/275121-1.وفقا للرفاهية وسبل الراحة التي توفرها للنزلاء...هذه هي أفضل غرف الفنادق في العالم.jpg" alt="" srcset="">
+            <div class="container-fluid">
+                <div class="row no-space wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                    <div class="col-md-3">
+                        <div class="img-wrapper">
+                            <a href="static/images/275121-1.وفقا للرفاهية وسبل الراحة التي توفرها للنزلاء...هذه هي أفضل غرف الفنادق في العالم.jpg">
+                                <img src="static/images/275121-1.وفقا للرفاهية وسبل الراحة التي توفرها للنزلاء...هذه هي أفضل غرف الفنادق في العالم.jpg" class="img-fluid" alt="" srcset="">
+                            </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <img class="marketing" src="static/images/3-MH_Executive_suite.jpg" alt="" srcset="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-wrapper">
+                            <a href="static/images/3-MH_Executive_suite.jpg">
+                                <img src="static/images/3-MH_Executive_suite.jpg" class="img-fluid" alt="" srcset="">
+                            </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <img class="websit" src="static/images/choose.png" alt="" srcset="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-wrapper">
+                            <a href="static/images/M-Resort-Hotel-Room-One-Bedroom-1.webp">
+                                <img src="static/images/M-Resort-Hotel-Room-One-Bedroom-1.webp" class="img-fluid" alt="" srcset="">
+                            </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <img class="websit" src="static/images/M-Resort-Hotel-Room-One-Bedroom-1.webp" alt="" srcset="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-wrapper">
+                            <a href="static/images/pexels-pixabay-164595.jpg">
+                                <img src="static/images/pexels-pixabay-164595.jpg" class="img-fluid" alt="" srcset="">
+                            </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <img class="websit" src="static/images/photo-slide-1-e1535645648206.jpg" alt="" srcset="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-wrapper">
+                            <a href="static/images/3-MH_Executive_suite.jpg">
+                                <img src="static/images/3-MH_Executive_suite.jpg" class="img-fluid" alt="" srcset="">
+                            </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <img class="websit" src="static/images/choose.png" alt="" srcset="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-wrapper">
+                            <a href="static/images/pexels-pixabay-164595.jpg">
+                                <img src="static/images/pexels-pixabay-164595.jpg" class="img-fluid" alt="" srcset="">
+                            </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <img class="marketing" src="static/images/aboutUs.png" alt="" srcset="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-wrapper">
+                            <a href="static/images/275121-1.وفقا للرفاهية وسبل الراحة التي توفرها للنزلاء...هذه هي أفضل غرف الفنادق في العالم.jpg">
+                                <img src="static/images/275121-1.وفقا للرفاهية وسبل الراحة التي توفرها للنزلاء...هذه هي أفضل غرف الفنادق في العالم.jpg" class="img-fluid" alt="" srcset="">
+                            </a>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <img class="marketing" src="static/images/photo-slide-2-e1535645573860.jpg" alt="" srcset="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-wrapper">
+                            <a href="static/images/3-MH_Executive_suite.jpg">
+                                <img src="static/images/3-MH_Executive_suite.jpg" class="img-fluid" alt="" srcset="">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End hotel photo -->
 
     <!-- Start room section -->
-    <div class="latest" id="room">
+    <div class="latest mt-5" id="room" data-aos="fade-down">
         <div class="container">
             <div class="upper-content text-center">
-                <h2>غرفنا واسعارنا</h2>
+                <div class="content-box--title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s"><!-- content-box--title style exists in content-box section in style.css -->
+                    <h3 class="title">فندقنا وأسعارنا</h3>
+                    <div class="content-title--underline"></div> <!-- content-title--underline style exists in content-box section in style.css -->
+                </div>
             </div>
             <div class="card-section">
                 <div class="container">
@@ -225,12 +262,12 @@
 
 
      <!-- Start Footer -->
-     <div class="footer" id="contact">
+     <div class="footer" id="contact" data-aos="fade-down">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-lg-9">
               <div class="site-info">
-                <h4><span>فندق </span><span>الياسمين</span></h4>
+                <h4 class="title"><span>فندق </span><span>الياسمين</span></h4>
                 <p>                                  
                     فندق الياسمين إحدى أفضل العلامات التجارية الشهيرة في السعودية
                     ، فندقنا فندق عصرى مفعم بالانتعاش والحيوية والطاقة. يحظى فندق الياسمين بمنزلةٍ
@@ -305,9 +342,15 @@
                 </div>
             </div>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>  
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="static/js/jquery.nicescroll.min.js"></script>
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script>
+        AOS.init();
+    </script>  
     <script src="static/js/script.js"></script>
 </body>
 </html>

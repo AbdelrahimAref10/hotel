@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Document</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
     <!-- Start navbar -->
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md" data-aos="fade-down">
         <div class="container-fluid">
             <a class="navbar-brand text-center" href="#">
                 <h5 data-toggle="modal" data-target="#exampleModal" >Elyasmeen <span>Hotel</span></h5> 
@@ -44,7 +48,7 @@
     <!-- end navbar -->
 
     <!-- Start Slider -->
-    <div class="slider slider-2">
+    <div class="slider slider-2" data-aos="fade-down">
         <div class="content text-center">
             <h5>مرحبا بك فى فندق الياسمين</h5>
             <h3>قم بالحجز الآن </h3>
@@ -53,7 +57,7 @@
     </div>
     <!-- End Slider -->
 
-    <div class="booking-section mt-5 pt-5" id="book">
+    <div class="booking-section mt-5 pt-5" id="book" data-aos="fade-down">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -66,7 +70,7 @@
                                 <input type="text" name="name" id="name" class="form-control"  placeholder="الإسم بالكامل">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" name="phone" id="phone" class="form-control"  placeholder="رقم التليفون">
+                                <input type="number" name="phone" id="phone" class="form-control"  placeholder="رقم التليفون">
                             </div>
                             <div class="col-md-6">
                                 <input type="text" name="national" id="national" class="form-control"  id="national" placeholder="الرقم القومي">
@@ -79,7 +83,16 @@
                                 </select>
                             </div>
                             <div class="col-md-6">
-                                <input type="number" name="number" id="room-number" class="form-control"  id="room-number" placeholder=" عدد الغرف الفردية">
+                                 <input type="number" name="number" id="room-number" class="form-control indButton"  id="room-number" placeholder=" عدد الغرف الفردية">
+                            </div>
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <label for="start" class="mb-3">تاريخ بداية الحجز</label>
+                                <input type="date" placeholder="بداية الحجز" class="form-control mb-2" id="start" name="start">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="end" class="mb-3">تاريخ نهاية الحجز</label>
+                                <input type="date" placeholder="نهاية الحجز" class="form-control mb-2" id="end" name="end" value="نهاية الحجز"> 
                             </div>
                             <div class="col-md-12">
                                 <input type="submit" name="submit" id="submit" class="btn-project btn-border mt-4 submit-btn pr-5 pl-5" value="احجز الآن">
@@ -94,7 +107,7 @@
 
 
     <!-- Start Overview -->
-    <div class="overview">
+    <div class="overview" data-aos="fade-down">
         <div class="container">
             <div class="overview-content text-center">
                 <h2>خدماتنا لعملائنا الكرام</h2>
@@ -102,7 +115,7 @@
                     يقدم فندقنا المتميز العديد من الخدمات لعملائنا المميزين ففندقنا يتميز بخدمة الحراسة على مدار 24 ساعه مما يجعلك تشعر بالطمأنينة دائما ونتميز ايضا بخدمة الواى لعملائنا حتى يمكنهم الاتصال بالعالم الخارجى بكل طمأنية 
                 </p>
                 <h4>هيا احجز اليوم</h4>   
-                <button>إحجز الآن</button>
+                <button class="btn-project btn-border pr-5 pl-5 submit-btn">إحجز الآن</button>
 
             </div>
         </div>
@@ -113,7 +126,7 @@
 
 
      <!-- Start Footer -->
-     <div class="footer" id="contact">
+     <div class="footer" id="contact" data-aos="fade-down">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 col-lg-9">
@@ -171,9 +184,14 @@
         </div>
       </div>
       <!-- End Copyeight-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>    
-    <script src="static/js/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>  
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+      <script src="static/js/jquery.nicescroll.min.js"></script>
+      <script>
+          AOS.init();
+      </script>  
+      <script src="static/js/script.js"></script>
 </body>
 </html>
